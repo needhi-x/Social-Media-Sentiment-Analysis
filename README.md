@@ -70,14 +70,10 @@ streamlit run app/app.py
 
 ## 📊 Example
 
+| Input Text        | Prediction     |
 |------------------|---------------|
-
-Input Text
-Prediction
-I love this app
-Positive 😊
-This is terrible
-Negative 😡
+| I love this app  | Positive 😊   |
+| This is terrible | Negative 😡   |
 
 
 ## 🎯 Future Improvements
