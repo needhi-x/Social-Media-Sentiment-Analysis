@@ -1,31 +1,48 @@
 text,sentiment
-I love this app,positive
+I love this product,positive
 This is amazing,positive
-Very useful and easy,positive
-Great experience,positive
-Loved the design,positive
-Awesome features,positive
-Best app ever,positive
-Super smooth performance,positive
-Very helpful,positive
-Fantastic UI,positive
-I like it,positive
-Really good app,positive
+Excellent service,positive
+Very happy with this app,positive
+Great experience overall,positive
+Super useful and easy,positive
+Really good quality,positive
+Best app I have used,positive
+Highly recommended,positive
+I am satisfied,positive
+Very good experience,positive
+Nice product,positive
 Works perfectly,positive
-Excellent performance,positive
-Nice experience,positive
-I hate this app,negative
+Loved it,positive
+Fantastic service,positive
+
 Worst experience ever,negative
-Very bad performance,negative
-Not working properly,negative
-Terrible bugs,negative
-Horrible interface,negative
-Waste of time,negative
-Very slow app,negative
-Crashes frequently,negative
-Not useful at all,negative
-This is terrible,negative
-Absolutely bad,negative
+I hate this app,negative
+Very bad quality,negative
+Not good at all,negative
+Terrible service,negative
+Waste of money,negative
+Completely useless,negative
 Very disappointing,negative
-Poor quality,negative
-Not good,negative
+Poor experience,negative
+I am not happy,negative
+Worst product,negative
+Broken and useless,negative
+Very frustrating,negative
+Bad quality,negative
+Totally useless,negative
+
+It is okay,neutral
+Not bad not good,neutral
+Average experience,neutral
+Fine product,neutral
+Nothing special,neutral
+Just okay,neutral
+It works normally,neutral
+Neither good nor bad,neutral
+Decent enough,neutral
+It is fine,neutral
+Okay service,neutral
+Acceptable quality,neutral
+Normal experience,neutral
+Nothing great,neutral
+It is alright,neutral
