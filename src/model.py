@@ -14,8 +14,11 @@ X = df["text"]
 y = df["sentiment"]
 
 # vectorize
-vectorizer = TfidfVectorizer(stop_words="english", ngram_range=(1,2))
-X = vectorizer.fit_transform(X)
+vectorizer = TfidfVectorizer(
+    ngram_range=(1,2),
+    stop_words="english",
+    max_features=5000
+)
 
 # split (IMPORTANT)
 X_train, X_test, y_train, y_test = train_test_split(
