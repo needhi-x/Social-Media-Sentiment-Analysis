@@ -1,6 +1,6 @@
 
 import streamlit as st
-st.write("🔥 UPDATED VERSION IS RUNNING")
+
 import pickle
 import matplotlib.pyplot as plt
 
