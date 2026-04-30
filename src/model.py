@@ -1,42 +1,27 @@
 import pandas as pd
-from sklearn.feature_extraction.text import TfidfVectorizer
-from sklearn.linear_model import LogisticRegression
-from sklearn.model_selection import train_test_split
 import pickle
+from nltk.sentiment import SentimentIntensityAnalyzer
 
-# load dataset
+# load data (optional, for reference only)
 df = pd.read_csv("data/sample_data.csv")
 
-# clean labels
-df["sentiment"] = df["sentiment"].str.strip().str.lower()
+# VADER model
+sia = SentimentIntensityAnalyzer()
 
-X = df["text"]
-y = df["sentiment"]
+def get_sentiment(text):
+    score = sia.polarity_scores(text)["compound"]
+    
+    if score >= 0.05:
+        return "positive"
+    elif score <= -0.05:
+        return "negative"
+    else:
+        return "neutral"
 
-# vectorize
-vectorizer = TfidfVectorizer(
-    ngram_range=(1,2),
-    stop_words="english",
-    max_features=5000
-)
+# test accuracy (simple check)
+df["predicted"] = df["text"].apply(get_sentiment)
 
-# split (IMPORTANT)
-X_train, X_test, y_train, y_test = train_test_split(
-    X, y,
-    test_size=0.3,
-    random_state=42,
-    stratify=y
-)
+print(df[["text", "sentiment", "predicted"]].head())
 
-# model
-model = LogisticRegression(max_iter=2000, C=0.7)
-
-model.fit(X_train, y_train)
-
-# results
-print("Train Accuracy:", model.score(X_train, y_train))
-print("Test Accuracy:", model.score(X_test, y_test))
-
-# save
-pickle.dump(model, open("models/model.pkl", "wb"))
-pickle.dump(vectorizer, open("models/vectorizer.pkl", "wb"))
+# save function (for streamlit use)
+pickle.dump(sia, open("models/vader.pkl", "wb"))
