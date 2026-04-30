@@ -1,4 +1,5 @@
 import streamlit as st
+import nltk
 from nltk.sentiment import SentimentIntensityAnalyzer
 
 # Initialize VADER
