@@ -60,8 +60,6 @@ Social-Media-Sentiment-Analysis/
 ### 😡 Negative Prediction
 ![negative](images/streamlit_negative.png)
 
-### 😐 Neutral Prediction
-![neutral ](images/streamlit_neutral.png)
 
 ## ⚙️ Installation
 git clone https://github.com/needhi-x/Social-Media-Sentiment-Analysis.git
