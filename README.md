@@ -39,18 +39,29 @@ Social-Media-Sentiment-Analysis/
 ├── requirements.txt
 └── README.md
 ```
+---
 
+## 🚀 Live Demo
+
+👉 Try the app here:https://social-media-sentiment-analysis-nozh9juewxjgu9svaysquq.streamlit.app/
+
+> This is a live deployed Streamlit dashboard that performs real-time sentiment analysis on user input.
+
+---
 
 ## 📸 Screenshots
 
-### 🟢 Home Page
-![homepage](images/home.png)
+### 🟢 Dashboard
+![ Dashboard](images/dashboard.png)
 
-### 😊 Positive Sentiment
-![positive](images/positive.png)
+### 😊 Positive Prediction
+![positive](images/streamlit_positive.png)
 
-### 😡 Negative Sentiment
-![negative](images/negative.png)
+### 😡 Negative Prediction
+![negative](images/streamlit_negative.png)
+
+### 😐 Neutral Prediction
+![neutral ](images/streamlit_neutral.png)
 
 ## ⚙️ Installation
 git clone https://github.com/needhi-x/Social-Media-Sentiment-Analysis.git
